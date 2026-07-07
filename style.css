@@ -257,6 +257,12 @@ h1 {
   font-size: 0.96rem;
 }
 
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 0.95rem;
+}
+
 .article-list {
   display: grid;
   gap: 0.45rem;
@@ -277,6 +283,66 @@ h1 {
 .article-list a:hover {
   border-color: #cfcfcf;
   background: #fff;
+}
+
+.tool-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.tool-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: clamp(1.1rem, 2.5vw, 1.6rem);
+}
+
+.tool-card h2 {
+  margin-bottom: 0.35rem;
+}
+
+.tool-summary {
+  margin: 0 0 1rem;
+  color: var(--muted);
+}
+
+.tool-meta {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.tool-meta > div {
+  padding: 0.85rem 0.95rem;
+  border-radius: 16px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+}
+
+.tool-meta dt {
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.tool-meta dd {
+  margin: 0;
+  color: var(--text);
+}
+
+.tool-meta ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.tool-download {
+  margin-top: 1rem;
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+}
+
+.tool-note {
+  color: var(--muted);
+  font-size: 0.92rem;
 }
 
 .section-footer-note {
