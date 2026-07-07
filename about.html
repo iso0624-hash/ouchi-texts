@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="ouchi texts の目的、構成、更新方針について。">
+  <meta name="description" content="ouchi texts の目的、カテゴリ構成、記事追加方法。">
   <title>このサイトについて | ouchi texts</title>
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -11,15 +11,11 @@
   <a class="skip-link" href="#main">本文へ移動</a>
   <header class="site-header">
     <div class="header-inner">
-      <a class="brand" href="./index.html">
-        <strong>ouchi texts</strong>
-        <span>読むための静的文章サイト</span>
-      </a>
+      <a class="brand" href="./index.html"><strong>ouchi texts</strong><span>文章置き場</span></a>
       <nav class="nav" aria-label="主要ナビゲーション">
-        <a href="./articles.html">文章一覧</a>
-        <a href="./ai.html">AI・道具</a>
-        <a href="./society.html">社会・制度</a>
-        <a href="./life.html">生活・実感</a>
+        <a href="./columns.html">模糊コラム</a>
+        <a href="./ai-criticism.html">AI評論</a>
+        <a href="./social-analysis.html">社会分析</a>
         <a href="./memo.html">メモ・記録</a>
         <a href="./about.html" aria-current="page">このサイトについて</a>
       </nav>
@@ -30,31 +26,36 @@
     <div class="page article-shell">
       <p class="eyebrow">about</p>
       <h1>このサイトについて</h1>
-      <p class="lead">
-        このサイトは、Google Sites からリンクして使う「本文の置き場」を想定して作っています。
-        余計な機能を入れず、読むことと追加することを優先しています。
-      </p>
+      <p class="lead">Google Sites からリンクする、無料の本文サイトとして使う前提で作っています。</p>
 
-      <h2>方針</h2>
+      <h2>目的</h2>
       <ul>
-        <li>静的 HTML と CSS だけで構成する。</li>
-        <li>白背景と十分な余白で、スマホでも読みやすくする。</li>
-        <li>記事をカテゴリに分け、一覧から辿りやすくする。</li>
-        <li>今後は 1 記事 1 ファイルで増やせるようにする。</li>
+        <li>静的 HTML / CSS だけで運用する。</li>
+        <li>白背景で、スマホでも読みやすくする。</li>
+        <li>記事をカテゴリごとに増やしやすくする。</li>
       </ul>
 
-      <h2>運用の考え方</h2>
-      <p>
-        新しい記事を増やすときは、まずカテゴリページにリンクを置き、
-        必要なら文章一覧にも追加します。これで、トップページを大きく変えなくても
-        サイト全体を整理できます。
-      </p>
+      <h2>カテゴリ構成</h2>
+      <ul>
+        <li>模糊コラム: テーマ単位の束、小片、断章。</li>
+        <li>AI評論: AI、道具、表現、創作、開発の評論。</li>
+        <li>社会分析: 行政、制度、労働、世代、地域、構造の分析。</li>
+        <li>メモ・記録: 作業メモ、運用メモ、試行錯誤、更新記録。</li>
+      </ul>
 
-      <h2>公開先</h2>
-      <p>
-        GitHub Pages のルートにこのフォルダを置けば、そのまま公開できます。
-        画像や JavaScript に依存していないため、更新も軽く済みます。
-      </p>
+      <h2>記事追加方法</h2>
+      <ol>
+        <li><code>articles/</code> に新しい HTML を 1 つ追加する。</li>
+        <li>その記事をカテゴリページの「最新3件」に入れる。</li>
+        <li>必要ならトップページの 3 件リンクも更新する。</li>
+      </ol>
+
+      <h2>トップページの最新3件リンクを更新する手順</h2>
+      <ol>
+        <li>各カテゴリで最新記事の順番を確認する。</li>
+        <li><code>index.html</code> の各カード内リンクを差し替える。</li>
+        <li>カテゴリページ側の「最新3件」も同じ順にそろえる。</li>
+      </ol>
     </div>
   </main>
 </body>

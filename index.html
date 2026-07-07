@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="おうちの文章を静かに読むためのサイト。AI・道具、社会・制度、生活・実感、メモ・記録をまとめます。">
+  <meta name="description" content="模糊コラム、AI評論、社会分析、メモ・記録をまとめる文章サイト。">
   <title>ouchi texts</title>
   <link rel="stylesheet" href="./style.css">
 </head>
@@ -13,13 +13,12 @@
     <div class="header-inner">
       <a class="brand" href="./index.html">
         <strong>ouchi texts</strong>
-        <span>読むための静的文章サイト</span>
+        <span>文章置き場</span>
       </a>
       <nav class="nav" aria-label="主要ナビゲーション">
-        <a href="./articles.html">文章一覧</a>
-        <a href="./ai.html">AI・道具</a>
-        <a href="./society.html">社会・制度</a>
-        <a href="./life.html">生活・実感</a>
+        <a href="./columns.html">模糊コラム</a>
+        <a href="./ai-criticism.html">AI評論</a>
+        <a href="./social-analysis.html">社会分析</a>
         <a href="./memo.html">メモ・記録</a>
         <a href="./about.html">このサイトについて</a>
       </nav>
@@ -31,28 +30,25 @@
       <div class="page hero-grid">
         <div class="hero-panel">
           <p class="eyebrow">home</p>
-          <h1>短く、静かに、読みやすく。</h1>
-          <p class="lead">
-            Google Sites からリンクして使える、白背景の文章サイトです。
-            記事はカテゴリ別に分け、スマホでも読みやすい余白と文字サイズにしています。
-          </p>
+          <h1>文章を、カテゴリごとに置く。</h1>
+          <p class="lead">Google Sites からリンクしやすい、白背景の静的な本文サイトです。</p>
           <div class="actions">
-            <a class="button primary" href="./articles.html">文章一覧を見る</a>
-            <a class="button" href="./about.html">サイトの方針を読む</a>
+            <a class="button primary" href="./columns.html">置き場を見る</a>
+            <a class="button" href="./about.html">運用方法を見る</a>
           </div>
         </div>
-        <aside class="hero-note" aria-label="サイトの要点">
+        <aside class="hero-side" aria-label="サイトの要点">
           <div>
-            <h2>使い方</h2>
-            <p>本文は各カテゴリページから追加しやすい構成です。</p>
+            <h2>用途</h2>
+            <p class="muted">本文をまとめて置くための最小構成。</p>
           </div>
           <div>
             <h2>見た目</h2>
-            <p>白背景、細い罫線、読みやすい行間で統一しています。</p>
+            <p class="muted">白背景、余白多め、スマホ優先。</p>
           </div>
           <div>
-            <h2>公開</h2>
-            <p>HTML と CSS だけなので、そのまま GitHub Pages に置けます。</p>
+            <h2>追加</h2>
+            <p class="muted">記事は <code>articles/</code> に 1 ファイルずつ増やします。</p>
           </div>
         </aside>
       </div>
@@ -62,55 +58,61 @@
       <div class="page">
         <div class="section-header">
           <div>
-            <p class="eyebrow">sections</p>
-            <h2>内容の入口</h2>
+            <p class="eyebrow">categories</p>
+            <h2>4つの置き場</h2>
           </div>
-          <p>カテゴリごとに分けると、後から増やしやすくなります。</p>
+          <p>カードのタイトルはカテゴリページへのリンクです。</p>
         </div>
 
         <div class="grid cards">
           <article class="card">
-            <h3><a href="./ai.html">AI・道具</a></h3>
-            <p>AI の使い方、作業の道具、考えを整理するための実践メモ。</p>
-            <div class="meta">
-              <a class="tag" href="./ai.html">カテゴリページ</a>
+            <div class="card-head">
+              <h3 class="card-title"><a href="./columns.html">模糊コラム</a></h3>
+            </div>
+            <p class="card-desc">短文を束ねる、断章寄りの置き場。</p>
+            <div class="article-list">
+              <a href="./articles/column-01.html">新しい記事 1: 断章の輪郭</a>
+              <a href="./articles/column-02.html">新しい記事 2: 余白に残る言葉</a>
+              <a href="./articles/column-03.html">新しい記事 3: テーマの束ね方</a>
             </div>
           </article>
+
           <article class="card">
-            <h3><a href="./society.html">社会・制度</a></h3>
-            <p>制度、働き方、教育、地域の仕組みなどの観察と記録。</p>
-            <div class="meta">
-              <a class="tag" href="./society.html">カテゴリページ</a>
+            <div class="card-head">
+              <h3 class="card-title"><a href="./ai-criticism.html">AI評論</a></h3>
+            </div>
+            <p class="card-desc">AI、道具、表現、創作、開発の評論。</p>
+            <div class="article-list">
+              <a href="./articles/ai-01.html">新しい記事 1: AIは補助輪か</a>
+              <a href="./articles/ai-02.html">新しい記事 2: 道具としての文章生成</a>
+              <a href="./articles/ai-03.html">新しい記事 3: 評論の書き方を変える</a>
             </div>
           </article>
+
           <article class="card">
-            <h3><a href="./life.html">生活・実感</a></h3>
-            <p>日々の暮らし、体感、習慣、気づきなどのエッセイ寄りの文章。</p>
-            <div class="meta">
-              <a class="tag" href="./life.html">カテゴリページ</a>
+            <div class="card-head">
+              <h3 class="card-title"><a href="./social-analysis.html">社会分析</a></h3>
+            </div>
+            <p class="card-desc">行政、制度、労働、地域、構造を読む。</p>
+            <div class="article-list">
+              <a href="./articles/social-01.html">新しい記事 1: 制度は誰に届くか</a>
+              <a href="./articles/social-02.html">新しい記事 2: 労働の前提を見直す</a>
+              <a href="./articles/social-03.html">新しい記事 3: 地域の見えない負荷</a>
             </div>
           </article>
+
           <article class="card">
-            <h3><a href="./memo.html">メモ・記録</a></h3>
-            <p>短い覚え書き、ログ、あとで参照するための軽い記録。</p>
-            <div class="meta">
-              <a class="tag" href="./memo.html">カテゴリページ</a>
+            <div class="card-head">
+              <h3 class="card-title"><a href="./memo.html">メモ・記録</a></h3>
+            </div>
+            <p class="card-desc">作業メモ、運用メモ、更新ログの置き場。</p>
+            <div class="article-list">
+              <a href="./articles/memo-01.html">新しい記事 1: サイト更新メモ</a>
+              <a href="./articles/memo-02.html">新しい記事 2: 試作の結果</a>
+              <a href="./articles/memo-03.html">新しい記事 3: 迷った点の記録</a>
             </div>
           </article>
         </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="page grid cards">
-        <article class="card">
-          <h3><a href="./articles.html">文章一覧</a></h3>
-          <p>全体の入口。カテゴリごとの記事をまとめて見られます。</p>
-        </article>
-        <article class="card">
-          <h3><a href="./about.html">このサイトについて</a></h3>
-          <p>サイトの目的、更新方針、追加しやすい構成の考え方を載せています。</p>
-        </article>
       </div>
     </section>
   </main>
@@ -118,7 +120,7 @@
   <footer class="footer">
     <div class="footer-inner">
       <div>© ouchi texts</div>
-      <div class="subtle">Static HTML / CSS only</div>
+      <div class="muted">HTML / CSS only</div>
     </div>
   </footer>
 </body>
