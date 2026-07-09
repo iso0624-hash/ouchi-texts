@@ -23,6 +23,7 @@ GitHub Pages でそのまま公開できる、静的な文章サイトです。
 - `social-analysis.html`
 - `memo.html`
 - `tools.html`
+- `visuals.html`
 - `about.html`
 - `style.css`
 - `articles/`
@@ -35,6 +36,13 @@ GitHub Pages でそのまま公開できる、静的な文章サイトです。
 2. 記事ページの標準形式は、タイトル、公開日、カテゴリ、本文、関連リンク、カテゴリ置き場への戻りリンク。
 3. 追加した記事を該当カテゴリページの「最新3件」に載せる。
 4. 必要ならトップページの「新しい記事から3件」を更新する。
+
+## 画像ページ
+
+- `visuals.html` は画像構の入口ページ。
+- `visuals/{slug}.html` は画像束ページ。
+- 画像資産は `assets/images/visuals/{slug}/` に置く。
+- 文章ページとは `related_text_slug` でつなぐ。
 
 ## 変換対応表
 
@@ -50,6 +58,9 @@ GitHub Pages でそのまま公開できる、静的な文章サイトです。
 - `status: draft` は未公開
 - `status: published` は公開済みの記録
 - 反映先は `category` と `type` の組み合わせで決める
+- GitHub Web 画面での手作業アップロードは行わない
+- 公開反映はローカル生成後に `publish.bat` から実行する
+- `publish.bat` は失敗時に止まり、変更なしなら何もしない
 
 ## トップページの最新3件リンクを更新する手順
 
