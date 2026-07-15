@@ -23,10 +23,14 @@ GitHub Pages でそのまま公開できる、静的な文章サイトです。
 - `social-analysis.html`
 - `memo.html`
 - `tools.html`
+- `apps.html`
 - `visuals.html`
 - `about.html`
 - `style.css`
 - `articles/`
+- `apps/{slug}/index.html`
+- `apps/_template/index.html`
+- `assets/apps/{slug}/screenshots/`
 
 旧URL互換のため、`articles.html` / `ai.html` / `society.html` / `life.html` は誘導ページとして残せます。
 
@@ -61,6 +65,16 @@ GitHub Pages でそのまま公開できる、静的な文章サイトです。
 - GitHub Web 画面での手作業アップロードは行わない
 - 公開反映はローカル生成後に `publish.bat` から実行する
 - `publish.bat` は失敗時に止まり、変更なしなら何もしない
+
+## 制作アプリ
+
+- `apps.html` に8アプリの紹介一覧を縦並びで掲載する。
+- 個別紹介ページは `apps/{slug}/index.html` に置く。
+- 個別ページの状態表示は、確認できる範囲に限定して記載する。未確認の機能や公開状態を補わない。
+- スクリーンショットは `assets/apps/{slug}/screenshots/` に置く。画像未配置時はHTML/CSSの準備中枠を表示する。
+- 実画像を追加した後、個別ページのHTMLコメントを参考に `figure`、`a`、`img`、`figcaption` へ差し替える。
+- 推奨ファイル名は `01-main-window.png`、`02-operation-screen.png`、`03-result-screen.png` のような半角英数字・小文字・ハイフン区切りとする。
+- `apps/_template/index.html` は追加アプリ用の非公開テンプレートで、一覧やナビゲーションには掲載しない。
 
 ## トップページの最新3件リンクを更新する手順
 
