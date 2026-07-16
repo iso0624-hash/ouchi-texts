@@ -457,6 +457,7 @@ h1 {
 .app-list-item { display: grid; gap: 0.35rem; padding: 1.1rem 1.15rem; border: 1px solid var(--line); border-radius: var(--radius); background: #fff; text-decoration: none; color: var(--text); }
 .app-list-item:hover { border-color: var(--accent); }
 .app-list-item h2 { margin: 0; font-size: 1.3rem; }
+.app-icon { width: 48px; height: 48px; margin-bottom: 0.25rem; border-radius: 14px; object-fit: cover; }
 .app-list-item p { margin: 0; color: var(--muted); }
 .app-status { width: fit-content; padding: 0.12rem 0.55rem; border: 1px solid var(--line); border-radius: 999px; background: var(--surface); color: var(--muted); font-size: 0.82rem; }
 .screenshot-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.8rem; }
@@ -467,6 +468,8 @@ h1 {
 .app-facts > div { padding: 0.9rem 1rem; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); }
 .app-facts dt { font-weight: 700; }
 .app-facts dd { margin: 0.2rem 0 0; }
+.nav-with-icon { display: inline-flex; align-items: center; gap: 0.3rem; }
+.nav-icon { width: 1.2rem; height: 1.2rem; border-radius: 0.35rem; object-fit: cover; }
 
 .footer {
   border-top: 1px solid var(--line);
