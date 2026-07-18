@@ -515,3 +515,27 @@ h1 {
 
   .screenshot-grid { grid-template-columns: 1fr; }
 }
+
+
+/* Category cards share a compact, consistent reading hierarchy. */
+.list-item,
+.app-list-item {
+  min-height: 0;
+  align-content: start;
+}
+
+.kind-label {
+  width: fit-content;
+  padding: 0.12rem 0.55rem;
+  border: 1px solid #b9c7d8;
+  border-radius: 999px;
+  background: #edf4fb;
+  color: #35516e;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.reference-card {
+  border-left: 4px solid #718aa4;
+  background: #f8fafc;
+}
